@@ -1,0 +1,13 @@
+{
+  "name": "privacy-policy-generator",
+  "nodes": [
+    {
+      "name": "Input",
+      "type": "manualTrigger"
+    },
+    {
+      "name": "Claude API",
+      "type": "httpRequest"
+    }
+  ]
+}
