@@ -1,3 +1,5 @@
+![AI Privacy Policy Generator](assets/cover.png)
+
 # AI Privacy Policy Generator
 
 Generate GDPR and LGPD compliant privacy policies using AI workflows.
