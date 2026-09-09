@@ -14,7 +14,7 @@ const workflow = JSON.parse(read('workflow/privacy-generator.json'));
 
 test('project does not present generated drafts as automatic compliance certification', () => {
   assert.match(readme, /not to certify GDPR, LGPD/i);
-  assert.match(readme, /requires? appropriate privacy\/legal review/i);
+  assert.match(readme, /qualified privacy\/legal professional should review/i);
   assert.match(prompt, /must \*\*not\*\* claim that the output is legally compliant/i);
   assert.match(prompt, /\[REVIEW REQUIRED:/);
 });
@@ -59,6 +59,6 @@ test('review checklist protects against unresolved placeholders and fabricated f
 });
 
 test('MIT license contains preservation and liability clauses', () => {
-  assert.match(license, /included in all copies or substantial portions/i);
-  assert.match(license, /IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE/i);
+  assert.match(license, /included in all\s+copies or substantial portions/i);
+  assert.match(license, /IN NO EVENT SHALL THE\s+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE/i);
 });
