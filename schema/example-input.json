@@ -1,0 +1,53 @@
+{
+  "company_name": "Example SaaS Ltd.",
+  "website_url": "https://example.com",
+  "country": "Brazil",
+  "business_type": "SaaS",
+  "privacy_contact": "privacy@example.com",
+  "target_regions": ["Brazil"],
+  "personal_data_categories": [
+    "account identity",
+    "email/contact data",
+    "billing metadata",
+    "usage analytics"
+  ],
+  "processing_purposes": [
+    {
+      "purpose": "Operate and secure user accounts",
+      "data_categories": ["account identity", "email/contact data"],
+      "legal_basis": null
+    },
+    {
+      "purpose": "Process subscription billing",
+      "data_categories": ["billing metadata"],
+      "legal_basis": null
+    }
+  ],
+  "uses_cookies": true,
+  "analytics_services": ["Plausible Analytics"],
+  "advertising_services": [],
+  "payment_processors": ["Stripe"],
+  "ai_services": [],
+  "third_party_services": [
+    {
+      "name": "Stripe",
+      "purpose": "Payment processing",
+      "data_categories": ["billing metadata"],
+      "transfer_notes": null
+    }
+  ],
+  "retention_rules": [
+    {
+      "data_category": "account identity",
+      "rule": "[REVIEW REQUIRED: retention/deletion rule not yet verified]"
+    }
+  ],
+  "international_transfers": null,
+  "children_or_minors": "Service is not intentionally directed to children; legal review required for the applicable age threshold and handling rules.",
+  "automated_decision_making": null,
+  "security_measures": [
+    "TLS in transit",
+    "role-based access controls"
+  ],
+  "notes_for_reviewer": "Example only. Legal bases, retention and transfer details are intentionally left for review."
+}

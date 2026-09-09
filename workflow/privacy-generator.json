@@ -1,13 +1,23 @@
 {
   "name": "privacy-policy-generator",
+  "status": "illustrative-skeleton",
+  "description": "Architecture example only; not an import-ready or production automation.",
   "nodes": [
     {
       "name": "Input",
       "type": "manualTrigger"
     },
     {
-      "name": "Claude API",
+      "name": "Validate structured facts",
+      "type": "planned"
+    },
+    {
+      "name": "LLM drafting adapter",
       "type": "httpRequest"
+    },
+    {
+      "name": "Human privacy/legal review",
+      "type": "required-review-step"
     }
   ]
 }
